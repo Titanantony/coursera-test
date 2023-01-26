@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AlphaKings Carwash</title>
 	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
 		body{
 			background: lightblue;
 		}
@@ -12,6 +15,28 @@
 			color: dark;
 			font-size: 36px;
 			text-align: center;
+		}
+		#back {
+
+			position: fixed;
+			bottom: 5px;
+			right: 5px;	
+			font-size: 1.75em;
+		}
+
+		h4{
+			clear: both;
+		}
+		@media(min-width:992px){
+			.col-lg-3
+		}
+		@media(min-width:768px and max-width:991px){
+
+		}
+		@media(min-width:576px and max-width:767px){
+
+		}
+		@media(max-width:575px){
 
 		}
 	</style>
@@ -35,16 +60,14 @@
     <h2 class="hi">Services</h2>
     <h4>Car Cleaning</h4>
     <h4>Packages</h4>
-      <div class="servi"> 
-        <ul>
-          <li> <div class="class ">bronze</div>
-          </li>
-          <li> <div class="class">silver</div>
-          </li>
-          <li> <div class="class">gold</div>
-          </li>
-          <li> <div class="class">platinum</div> </li>
-        </ul> 
+
+      <div class="servi" class="container">
+      	<div class="row">  
+        <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12 class ">bronze</div>
+        <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12 class">silver</div>
+        <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12 class">gold</div>
+        <div class="col col-lg-3 col-md-6 col-sm-6 col-xs-12 class">platinum</div>
+      </div>
       </div>
       <h4>Carpet Cleaning</h4>
     </section>
@@ -65,8 +88,37 @@
    </section>
    <section>
       <div>
-        <a href="#top">Back to🔝</a>
+      	<hr>
+
+
+        <a href="#top" id="back">`	🔝</a>
+        <p>&copy copyright 2023</p>
       </div>
   </section>
 </body>
 </html>
+<!-- <ul>
+          <li> <div class="class ">bronze</div>
+          </li>
+          <li> <div class="class">silver</div>
+          </li>
+          <li> <div class="class">gold</div>
+          </li>
+          <li> <div class="class">platinum</div>
+          <ul>
+          	
+          	<li>Body</li>
+          	<li>Wheels</li>
+          	<li>Interior detailing</li>
+          	<li>Interior vacuum</li>
+          	<li>Dashboard polish</li>
+          	<li>Rireshine</li>
+          	<li>Waxing</li>
+          	<li>Underbody blast</li>
+          	
+
+
+          	
+          </ul> 
+          </li>
+        </ul> --!>
