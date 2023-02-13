@@ -24,6 +24,9 @@ body>h1{
   font-size: 36px;
   text-align: center;
 }
+body h2{
+  color:#000000;
+}
 #back {
   position: fixed;
   bottom: 5px;
@@ -33,7 +36,30 @@ body>h1{
 
 h4{
   clear: both;
+  color: #006666;
   }
+
+  /*** jumbotron picture styling  **/
+
+  
+
+
+
+  /*** End of jumbotron picture styling  **/
+
+  /** sevises tiles syling**/
+  .servi .col{
+    background-color: grey;
+    border: 2px solid #3F0C1F;
+  }
+  .col h6{
+    text-align: center;
+  }
+  .col ul{
+    list-style-type: none;
+  }
+  /** End of sevises tiles syling**/
+
 @media(min-width:992px){
   .col-lg-3
   }
@@ -44,6 +70,10 @@ h4{
 
   }
 @media(max-width:575px){
+
+  .jumbotron img {
+    height: 300px;
+  }
 
   }
 
