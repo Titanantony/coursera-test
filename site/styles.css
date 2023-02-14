@@ -1,4 +1,6 @@
-
+.footerr{
+  background-color: lightblue;
+}
 *{
   box-sizing: border-box;
 }
@@ -19,13 +21,9 @@ body {
 }
 
 
-body>h1{
-  color: dark;
-  font-size: 36px;
-  text-align: center;
-}
 body h2{
   color:#000000;
+  text-align: center;
 }
 #back {
   position: fixed;
@@ -37,6 +35,7 @@ body h2{
 h4{
   clear: both;
   color: #006666;
+  text-align: center;
   }
 
   /*** jumbotron picture styling  **/
@@ -54,6 +53,7 @@ h4{
   }
   .col h6{
     text-align: center;
+    background-color:#3F0C1F ;
   }
   .col ul{
     list-style-type: none;
