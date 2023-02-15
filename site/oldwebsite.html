@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<title>Alpha KIngs Carwash</title>
+	<style>
+	*{
+	    box-sizing: border-box;
+	}
+	
+	body{
+	    background-color: #87CEEB;
+	}
+	h2{
+	    font-size: 2.0em;
+	    color: #9400D3;
+	}
+    .hi {
+    	clear: both;
+    }
+
+	/***** Nav bar ***/
+	.navbar-brand{
+	    font: 1.5em poor richard;
+	}
+	#navbarNav{
+	    background-color: #333;
+
+	}
+	#navbarNav a{
+	    color: #f2f2f2;
+	}
+	#navbarNav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    #navbarNav ul{
+    	margin-left: 10px;
+
+
+    }
+    .navbar{
+    	padding: 0px;
+    }
+
+    /***    SlideShow    ***/
+
+
+    .carousel-inner{
+    	background-color: #696969;
+
+    }
+    #slideshow{
+    	background-color: black;
+    }
+
+    #slideshow .carousel-caption {
+    	position: absolute;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+  		font-size: 15vw;
+  		font-size: 2em;
+    }
+    #slideshow .carousel-caption h5 span{
+    	color: #FF1493;
+    } 
+
+
+
+
+
+
+	
+    /**** Services  ****/
+
+    #services h4{
+        font-size: 1.1em;
+        color: #FF1493;
+        text-align: center;
+        background-color: #FFFFFF;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        text-align: center;
+        font-weight: bold;        
+    }
+    
+    #services .services_box{
+        background-color: #DCDCDC; 
+        border: 2px solid #808080;
+        border-radius: 10px;
+        height: 230px;
+        margin-top: 15px;
+        margin: 10px;
+        padding: 0px;        
+    }
+    
+
+    #services .container ul li span {
+    	font-size: 1.2em;
+    	color:  #8a2be2;
+    } 
+
+	    /*******    tiles    *******/
+	#map_tile, #pricing_tile, #Site_photos_tile {
+ 		height: 250px;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 		position: relative;
+ 		border: 2px solid #3F0C1F;
+ 		overflow: hidden;
+ 		border-radius: 5px;
+	}
+	#map_tile:hover, #pricing_tile:hover,#Site_photos_tile:hover {
+ 		box-shadow: 0 1px 5px 1px #cccccc;
+		}
+
+	#Site_photos_tile {
+  		background: url('https://i.ibb.co/7C7vzpR/IMG-20210717-WA0031.jpg?w=940&h=650&auto=compress&cs=tinysrgb') no-repeat;
+  		background-position: center;
+	}
+	#pricing_tile {
+ 		background: url('https://i.ibb.co/hWTqv75/plan-pricing-page.jpg') no-repeat;
+  		background-position: center;
+	}
+
+	#map_tile span, #pricing_tile span, #Site_photos_tile span {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 1.6em;
+		text-transform: capitalize;
+		background-color: #000;
+		color: #fff;
+		opacity: .8;
+	}	    
+	    
+	    /***** contact ******/
+	#contact{
+	    background-color: #2e2e2e;
+	}    
+	    
+	#contact .contact2 li{
+	    list-style-type: none;
+	    font-size: 2em;
+	    display:inline;
+	    margin: 4px;
+	    
+	}
+	
+	#contact ul .lastchild i{
+	    color: #fb3958;
+	}
+ 
+    #contact .contact{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+ 
+	#contact h5, h6, p{
+	    color: #FFFAFA;
+	}
+	#contact .contact1 h6{
+		margin-left: 10px;
+	}
+	#contact .contact1 p{
+		color: #228B22;
+		line-height: 1.0;
+		margin-top: 10px;
+
+	}
+	#contact .contact3 p{
+		color: #008000;
+		line-height: 1.5;
+		margin-top: 10px;
+	}
+	#contact hr{
+		color: white;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	#contact .copyright{
+		background-color: #000000;;
+	}
+	
+	#contact .copyright span{
+	    color: #778899;
+	}
+	
+	#contact .top{
+	    position: fixed;
+	    bottom: 8px;
+        right: 16px;
+        font-size: 1.5em;
+	}
+	#contact .contact3{
+		text-align: center;
+	}
+	
+	
+/** Extra small devices (portrait phones, less than 576px)**/
+    @media (max-width: 575.98px) { 
+
+    #slideshow .carousel-caption{
+    	top: 40%;
+    }        
+        
+    
+    #maps p>iframe{
+	    width: 100%;
+	}
+    #services .services_box{
+    	max-width: 240px;
+    	height: 200px;
+    }
+    #tiles .row .picha{
+    	padding: 0px;
+    	border: 0px;
+    }
+    #map_tile{
+    	border: 0px;
+    }
+    #contact h5, h6, #contact ul, p{
+    	text-align: center;
+    	margin-right: auto;
+    	margin-left: auto;
+    }	
+
+    }
+
+/** Small devices (landscape phones, 576px and up)**/
+    @media (min-width: 576px) and (max-width: 767.98px) { 
+    #slideshow .carousel-caption h5{
+    	font-size: 1.2em;
+    }     	
+
+    #services .services_box{
+    	max-width: 250px;
+    } 
+    #contact h5, h6, #contact ul, p{
+    	text-align: center;
+    }        
+        
+        
+    }
+
+    
+
+/*** Medium devices (tablets, 768px and up)   **/
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+    #slideshow .carousel-caption h5{
+    	font-size: 1.3em;
+    }     	  
+    
+    #services .services_box{
+    	max-width: 280px;
+    }     
+        
+        
+    }
+
+/*** Large devices (desktops, 992px and up) ***/
+    @media (min-width: 992px) and (max-width: 1199.98px){ 
+    
+    .navbar-brand{
+	    width: 76%;
+    }
+    #slideshow .carousel-caption h5{
+    	font-size: 1.7em;
+    }   
+    #services .services_box{
+    	max-width: 215px;
+    }
+
+        
+    }
+
+/*** Extra large devices (large desktops, 1200px and up) **/
+    @media (min-width: 1200px) { 
+
+    .carousel-inner{
+    	height: 550px
+    }    	
+    .navbar-brand{
+	    width: 76%;
+    }
+    #slideshow .carousel-caption h5{
+    	font-size: 2em;
+    }        
+        
+    #services .services_box{
+    	max-width: 230px
+    }
+    #tiles .picha img{
+    	max-width: 230px;
+    	height: 250px;
+    }     
+
+    }
+	    
+	</style>
+</head>
+<body>
+   <header>
+	<nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #778899;">
+	  <a class="navbar-brand" href="#top"><span>Alpha Kings</span> &ensp;Carwash</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#services">Services</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#pricing">Pricing</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#maps">Maps</a>
+	      </li> 
+	      <li class="nav-item">
+	        <a class="nav-link" href="#contact">Contact</a>
+	      </li>                 
+	    </ul>
+	  </div>
+	</nav>
+   </header>
+	<main>
+		<section id="slideshow">
+		  <div class="h-100 d-inline-block w-100 p-3">
+		  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+			    <img class="d-block w-100" src="https://i.ibb.co/86tXCC4/IMG-20210717-WA0027.jpg" alt="First slide">
+		      	<div class="carousel-caption">
+              	 <h5><span>Alpha&nbsp;Kings</span><br> Carwash</h5>
+              	</div>			    
+		  	  	</div>
+		  <div class="carousel-item ">
+		      <img class="d-block w-100" src="https://i.ibb.co/ZS4b62F/IMG-20210717-WA0032.jpg" alt="Second slide">
+		      <div class="carousel-caption"> 
+		      	<!--d-none d-md-block // remove from a particular screen -->
+              	<h5>Its Not Clean Untill Its <span><!--<br class="visible-md visible-sm">-->Alpha&nbsp;Clean</span></h5>
+              </div>
+		  </div>
+		    <div class="carousel-item">
+		      <img class="d-block w-100" src="https://i.ibb.co/vZ1ypSs/IMG-20210717-WA0033.jpg" alt="Third slide">
+		      	<div class="carousel-caption">
+              	 <h5>Have a <span>Carwash</span><br class="visible-xs">Experience at it's best</h5>
+                 
+              	</div>			    
+		  	  	</div>		      
+		    </div>
+		    </div>
+		  </div>
+			
+		</section>
+
+   		<section id="services"> 
+   			<div class="container">
+   			<div class="row">
+   				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 services_box">
+   					<h4>Bronze package</h4>
+   				<ul>	
+    				<li><i class="bi bi-stopwatch-fill"></i> 10 Minutes</li>
+    				<li> Exterior body wash</li>
+    				
+    			</ul>
+   				</div>
+   				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 services_box">
+   					<h4>Sliver package</h4>
+   				<ul>	
+    				<li><i class="bi bi-stopwatch-fill"></i> 10 Minutes</li>
+    				<li><span> Bronze package ➕</span></li>
+    				<li> Interior vacuum</li>
+    				<li> Interior wipe</li>
+    				
+    			</ul>
+   					
+   				</div>   				
+   				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 services_box">
+   					<h4>Gold package</h4>
+   				<ul>	
+    				<li><i class="bi bi-stopwatch-fill"></i> 10 Minutes</li>
+    				<li><span>Silver package ➕</span></li>
+    				<li>Tyres shine</li>
+    				<li>Dashboard polish</li>
+    			</ul>
+   				</div>
+   				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 services_box" >
+   					<h4>Platinum package</h4>
+   				<ul>	
+    				<li><i class="bi bi-stopwatch-fill"></i> 10 Minutes</li>
+    				<li><span>Gold package ➕</span></li>
+    				<li>Engine wash</li>
+    				<li>Underwash</li>
+    				<li>Body waxing</li>
+    			</ul>
+   				</div>
+   			</div><!--End of row div-->
+   		</div>
+   	</section>
+   				 			<!--<h2 class="hi">Pricing</h2>
+  		 			<h5>Bronze Package</h5>
+  		    
+            		<div>Saloon Ksh: </div>
+	        		<div>SUV Ksh:  </div>
+			  		<h5>Silver Package</h5>
+  				
+    			    <div>Saloon Ksh: </div>
+	        		<div>SUV Ksh:  </div>  		 
+  					<h5>Gold Package</h5>
+  					
+        			<div>Saloon Ksh: </div>
+	    			<div>SUV Ksh:  </div>  		 
+  					<h5>Platinum Package</h5>
+  					
+        			<div>Saloon Ksh: </div>
+	    			<div>SUV Ksh:  </div>-->
+
+
+
+
+
+    	<div id="tiles" class="container">	
+    		<div class="row">
+   			
+    			<div class="col-md-4 col-sm-6 col-xs-12">
+    				<a href="pricing-category.html"><div id="pricing_tile"><span>Pricing</span></div></a>
+	    		</div>			  		 		
+    			<div class="col-md-4 col-sm-6 col-xs-12">
+    				<a href="Site-photos-category.html"><div id="Site_photos_tile"><span>Site photos</span></div></a>
+  		 		</div>
+    			<div class="col-md-4 col-sm-12 col-xs-12 picha"> 
+
+    				<a href="https://www.google.com/maps/place/Slaughter%2FBypass,+Ruaka/@-1.20578,36.78005,17z/data=!4m6!1m3!3m2!1s0x182f22b49245bba3:0x822245779115e8ad!2sSlaughter%2FBypass,+Ruaka!3m1!1s0x182f22b49245bba3:0x822245779115e8ad" target="_blank"><div id="map_tile"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.678989632288!2d36.77043696289063!3d-1.216034476703704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x822245779115e8ad!2sSlaughter%2FBypass!5e0!3m2!1sen!2ske!4v1629139180145!5m2!1sen!2ske" width="100%" height="250" style="border:0;" allowfullscreen></iframe><span>map</span></div></a>
+    			</div>  		 			
+    		</div>
+    	</div>
+
+
+	</main>
+    <section id="contact">
+    	<div class="container">
+        <div class="row">
+        <div class="col-sm-6 col-md-4 contact contact1">
+        	<h5 class="time">Working hours</h5>
+    	 		<h6>Weekdays</h6>
+    				<p>Opens at 6:30am<p>
+     				<p>Closes at 8:30 pm</p>
+        		<h6>Weekends</h6>
+    		    	<p>Opens at 7:00am</p>
+    		    	<p>Closes at 7:30pm</p><br>
+    	   			 <hr class="d-block d-sm-none">
+    	</div>	
+        <div class="col-sm-6 col-md-4 contact contact2" >
+        <h5>Follow us on</h5>
+            <ul>
+    	        <li><a href="https://www.facebook.com/Alpha-Kings-Carwash-104606445244538" target="_blank" title="Like our page" ><i class="bi bi-facebook"></i></a>
+    	        </li>
+    	        <li class="lastchild"><a href="https://www.instagram.com/alphakingscarwash/" target="_blank" title="Follow us on instragram"><i class="bi bi-instagram"></i></a>
+    	        </li>
+    	    </ul> 
+    	<h5 class="wewe">Send us an email</h5>
+    	    <ul><li><a href="mailto:alphakingscarwash@gmail.com" class="email"><i class="bi bi-chat-dots-fill"></i></a></li></ul> 
+    	    <hr class="d-block d-sm-none">     
+    	</div>
+    	<div class="col-sm-6 col-md-4 contact contact3">
+    	<h5><hr class="d-none d-sm-block d-md-none"> Give us a call</h5>
+    	    <a href="tell:+254704930307"><i class="bi bi-telephone-outbound"></i> +254 704 930 307</a>	
+    	<p><i>"Both the employee and employer are very hardworking definetly standout from others"</i></p>    						
+    	
+    	</div>
+    	</div>
+    	</div>
+         <div class="copyright">
+            <hr><span>Copyright © 2021, All Right Reserved</span>
+        </div>
+        <div>
+    	    <a href="#top" class="top">🔝</a>
+        </div>        
+    </section>
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

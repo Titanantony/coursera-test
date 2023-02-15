@@ -7,7 +7,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color:#4ddbff;
+  background-color:#87CEEB;
   font-family: 'Oxygen', sans-serif;
 }
 .navbar{
@@ -38,6 +38,8 @@ h4{
   text-align: center;
   }
 
+
+
   /*** jumbotron picture styling  **/
 
   
@@ -46,19 +48,55 @@ h4{
 
   /*** End of jumbotron picture styling  **/
 
-  /** sevises tiles syling**/
+  /** sevises tiles syling **/
+
   .servi .col{
-    background-color: grey;
-    border: 2px solid #3F0C1F;
+    background-color: #DCDCDC;
+    border: 10px solid #87CEEB;
+    border-radius: 20px;
+    margin: ;
   }
   .col h6{
     text-align: center;
-    background-color:#3F0C1F ;
+    font-size: 1.1em;
+        color: #FF1493;
+        text-align: center;
+        background-color: #FFFFFF;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        text-align: center;
+        font-weight: bold; 
   }
   .col ul{
     list-style-type: none;
   }
+  .col li{
+  font:1.2em;
+  color:  #000;
+}
+
+
+
   /** End of sevises tiles syling**/
+
+  /**Icons syling**/
+
+
+
+  
+  /**End of Icons syling**/
+
+
+
+  /***Contact styling**/
+  .contact .col{
+
+  background-color:#2e2e2e;
+  margin-top: 10px; 
+  }
+
+
+  /*** End of Contact styling**/
 
 @media(min-width:992px){
   .col-lg-3
