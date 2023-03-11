@@ -15,6 +15,7 @@ body {
 }
 .navbrand{
   background-color:#006666;
+  font: 1.5em poor richard;
 }
 .navbar-toggler{
   border: 1px solid #4ddbff;
@@ -41,8 +42,43 @@ h4{
 
 
   /*** jumbotron picture styling  **/
-
+.jumbo_tron{
   
+  border: 10px solid black;
+  height: 50%;
+}
+
+.jumbo_ttron{
+  
+  height: 50%;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: yellow;
+}
+.caption1 {
+  top: 50%;
+}
+.carousel-caption h1{
+  font-size: 15vw;
+  font-size: 2em;
+  color: #000;
+}
+
+.carousel-caption h5{
+  font-size: 15vw;
+  font-size: 4em;
+}
+
+.carousel-caption h5 span,.carousel-caption h1 span
+{
+  color: #FF1493;
+}  
 
 
 
@@ -52,23 +88,36 @@ h4{
 
   .servi .col{
     background-color: #DCDCDC;
-    border: 10px solid #87CEEB;
+    margin-top: 10px;
+    border: 1px solid #000;
     border-radius: 20px;
-    margin: ;
+    padding: 0px;
+    height: 230px;
+    
+
+
   }
+  .servi .col li span{
+    font-size: 1.2em;
+    color:  #8a2be2;
+  }
+
+
+
   .col h6{
     text-align: center;
     font-size: 1.1em;
-        color: #FF1493;
-        text-align: center;
-        background-color: #FFFFFF;
-        border-top-right-radius: 5px;
-        border-top-left-radius: 5px;
-        text-align: center;
-        font-weight: bold; 
+    color: #FF1493;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    font-weight: bold; 
   }
   .col ul{
     list-style-type: none;
+    padding-left: 0px;
   }
   .col li{
   font:1.2em;
@@ -79,40 +128,356 @@ h4{
 
   /** End of sevises tiles syling**/
 
-  /**Icons syling**/
 
+  #map_tile, #price_tile, #photo_tile {
+    height: 250px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
+  /*** Price styling  ***/
+  .i_pricing img{
+    border: 3px solid black;
+    margin: auto;
+    display: block;
+    /*position: static;
+    text-align: center*/;
+    /*max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    z-index: 1;
+    vertical-align: middle;
+    overflow: auto;*/
+
+  }
+  .i_pricing{
+    text-align: center;
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+    padding-top: 100px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    vertical-align: middle;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9);
+  }
+  .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+    
+  
+
+  #map_tile>iframe{
+    width: 100%;
+  }
+
+  .content_tiles a{
+    padding-left: 0px;
+  }
+  .content_tiles picture{
+    padding: 0px;
+  }
 
   
-  /**End of Icons syling**/
+
+  #map_tile span, #price_tile span, #photo_tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+  }
+  #price_tile{
+    background-image: url("../3price.png");
+  }
+
+
+  /*******    FOOTER STYLING   *******/
+
+  /**footer divs styling**/
+
+
+
+  /**Icons syling**/
 
 
 
   /***Contact styling**/
   .contact .col{
-
   background-color:#2e2e2e;
-  margin-top: 10px; 
+  margin-top: 0px; 
   }
 
 
-  /*** End of Contact styling**/
-
-@media(min-width:992px){
-  .col-lg-3
+  #footer h2,#footer h4 {
+    color: #FFFAFA;
   }
-@media(min-width:768px and max-width:991px){
+
+  .time li{
+    color: #228B22;
+    line-height: 1.0;
+    margin-top: 10px;
 
   }
-@media(min-width:576px and max-width:767px){
+
+  #contact .hi a .ins{
+    color: #fb3958;
+    margin-left: 15px;
 
   }
-@media(max-width:575px){
+  #contact .hi a{
+    font-size: 2em;
+  }
 
-  .jumbotron img {
+  #contact .hi a .wtpp{
+    color: #00ff00;
+  }
+
+
+
+  .call{
+    font-size: 0.5em;
+  }
+  #phone p{
+    color: #228B22;
+  }
+
+
+
+
+  /****copyright styling***/
+  .copyright p{
+    margin-bottom: 0px;
+    background-color: #000;
+    color: #778899;
+    padding-left: 10px;
+  }
+
+  .copyright hr{
+    
+    margin: 0px;
+    border-top-width: 0px ;
+  }
+
+
+
+
+  /****end of footer styling***/
+
+
+
+
+/*-----extra small devices------*/
+
+
+@media(max-width:575.9px){
+
+ 
+  .servi .col{
+    max-width: 240px;
+    height: 200px;
+    text-align: justify-all;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
+
+  }
+  .carousel-item, img{
+    height: 350px;
+  }
+  .carousel-caption h5{
+  font-size: 15vw;
+  font-size: 2em;
+}
+  .content_tiles a{
+    padding-right: 0px;
+  }
+
+
+  }
+
+
+
+/*     small  devices    */
+
+
+@media(min-width:576px) and (max-width:767px){
+  .carousel-caption{
+    top: 50%;
+
+  }
+  .carousel-caption h5{
+  font-size: 3em;
+}
+  .servi .col{
+    max-width: 215px;
+    margin-left: auto;
+  }
+  #services .servi .first_child, #services .servi .third_child{
+    margin-left: 0px;
+  }
+
+
+  .content_tiles picture{
+    padding-right: 0px;
+  }
+
+  .content_tiles a{
+    padding-right: 12px;
+  }
+  .carousel-item, img{
+    height: 400px;
+  }
+
+
+  }  
+
+
+/*-----medium devices------*/
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+  .carousel-caption{
+    color: #006666;
+
+  }
+   .carousel-caption h1{
+  font-size: 3em;
+}
+
+.carousel-caption h5{
+  font-size: 4em;
+}
+
+  #map_tile{
+    justify-items: center;
+  }
+  .servi .col{
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousel-item, img{
+    height: 450px;
+  }
+  .content_tiles picture{
+    padding-right: 12px;
+  }
+
+
+
+
+  }
+
+
+/*----large devices-----*/
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .carousel-caption{
+    color: #000;
+
+  }
+   .carousel-caption h1{
+  font-size: 3em;
+}
+
+.carousel-caption h5{
+  font-size: 4em;
+}
+
+  .servi .col{
+    max-width: 215px;
+    width: 23%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #services .servi .first_child{
+    margin-left: 0px;
+  } 
+
+  #services .servi .last_child{
+    margin-right: 0px;
+
+  }
+  .carousel-item, img{
+    height: 450px;
+  }
+  .content_tiles picture{
+    padding-right: 12px;
+  }
+
+  }
+
+
+
+/*-----extra large devices-----*/
+
+@media(min-width: 1200px){
+  .carousel-inner .jumbo_tron img{
     height: 300px;
   }
+  .carousel-caption{
+    color: #000;
 
   }
+   .carousel-caption h1{
+  font-size: 3em;
+}
+
+.carousel-caption h5{
+  font-size: 4em;
+}
+  
+  .servi .col{
+    max-width: 230px;
+    width: 23%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  #services .servi .first_child{
+    margin-left: 0px;
+  } 
+
+  #services .servi .last_child{
+    margin-right: 0px;
+
+  }
+  .carousel-item, img{
+    height: 450px;
+  }
+  .content_tiles picture{
+    padding-right: 12px;
+  }
+
+
+}
+
+
+
+
 
 
