@@ -120,17 +120,63 @@
       </div> -->
       
     </section>
-    <div class="container i_pricing">
+    <div class="container i_pricing" id="p_image">
       <img src="../i_pricing.PNG">
-      <span class="close">&times;</span>     
+      <a onclick="remove()"><span class="close">&times;</span></a>     
     </div>
+    <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="sl_jumbtron">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../5s_pics.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../2s_pics.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../3s_pics.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="../5s_pics.JPG" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../5s_pics.JPG" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../2s_pics.JPG" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../3s_pics.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../5s_pics.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
 
 <div class="container text-center content_tiles">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-  	<a><div id="price_tile" class="hi col">
+  	<a onclick="pop()" ><div id="price_tile" class="hi col">
     	<span>Pricing</span>
     </div></a>
-    <picture> <div id="photo_tile" class="hi col">
+    <picture onclick="openModal();currentSlide(1)" class="hover-shadow cursor"> <div id="photo_tile" class="hi col">
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     
@@ -143,14 +189,14 @@
       <img src="../5s_pics.JPG" class="d-block w-100" alt="...">
     </div> -->
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
+  </button> -->
 </div>
     	<span>Site photos</span>
     </div></picture>
